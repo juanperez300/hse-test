@@ -33,22 +33,22 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Kurt Knispel', 305, 3.7, 67, 4.3),
-  createData('Mathew Smith', 452, 25.0, 51, 4.9),
-  createData('Albert Miller', 262, 16.0, 24, 6.0),
-  createData('Maya Karamchandani', 159, 6.0, 24, 4.0),
-  createData('Jorge Gonzalez', 356, 16.0, 49, 3.9),
-  createData('Ada Wong', 408, 3.2, 87, 6.5),
-  createData('Eddy Fuller', 237, 9.0, 37, 4.3),
-  createData('Steven Johnson', 375, 0.0, 94, 0.0),
-  createData('Katerine Setsuna', 518, 26.0, 65, 7.0),
-  createData('Ada Lovelace', 392, 0.2, 98, 0.0),
-  createData('Alan Turin', 318, 0, 81, 2.0),
-  createData('Steve Jobs', 360, 19.0, 9, 37.0),
-  createData('Simon Hayha', 437, 18.0, 63, 4.0),
-  createData('Corey Taylor', 437, 18.0, 63, 4.0),
-  createData('Oliver Sykes', 437, 18.0, 63, 4.0),
-  createData('Mitch Lucker', 437, 18.0, 63, 4.0)
+  createData('Kurt Knispel', 'Microsoft', 'CEO', 'Yes', 'Active'),
+  createData('Mathew Smith', 'Tecno Glass' , 'Manager', 'No', 'Banned'),
+  createData('Albert Miller', 'Monomeros', 'front-end Engineer', 'Yes', 'Active'),
+  createData('Maya Karamchandani', 'Avianca', 'Pilot', 'No', 'Banned'),
+  createData('Jorge Gonzalez', 'Cumbia', 'QA', 'No', 'Banned'),
+  createData('Ada Wong', 'GuarapoLab', 'CTO', 'Yes', 'Active'),
+  createData('Eddy Fuller', 'Koombea', 'Back-end Engineer', 'Yes', 'Active'),
+  createData('Steven Johnson', 'Habi', 'Product Designer', 'No', 'Banned'),
+  createData('Katerine Setsuna', 'La haus', 'Photographer', 'No', 'Banned'),
+  createData('Ada Lovelace', 'Develop App', 'Full-Stack', 'Yes', 'Active'),
+  createData('Alan Turin', 'Horus', 'Armorer of Troops', 'Yes', 'Active'),
+  createData('Steve Jobs', 'BBVA', 'Cashier', 'No', 'Banned'),
+  createData('Simon Hayha', 'Aztraseneca', 'Chemical Engineer ', 'Yes', 'Active'),
+  createData('Corey Taylor', 'Logitech', 'Mouse tester', 'Yes', 'Active'),
+  createData('Oliver Sykes', 'Asus', 'Seller', 'Yes','Active'),
+  createData('Mitch Lucker', 'IBM', 'Product Owner', 'Yes', 'Active')
 ];
 
 function descendingComparator(a, b, orderBy) {
