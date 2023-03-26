@@ -6,10 +6,14 @@ import AvatarUser from "../components/avatars/AvatarUser";
 import NewUsers from "../components/newUsers/NewUsers";
 import InputFindUsers from "../components/input/InputFindUsers";
 import Table from "../components/table/Table";
+import AppContext from "../context/AppContext";
+
 export default function SimpleContainer() {
+  const {filter} = React.useContext (AppContext)
   return (
     <React.Fragment>
-      <Box sx={{ backgroundColor: "#F0F1F2", height: "100vh", margin: 0 }}>
+      <Box sx={{ backgroundColor: "#F9FAFB", height: "100vh", margin: 0 }}>
+        
         <Container maxWidth="lg">
           <Grid container spacing={2}>
             <Grid

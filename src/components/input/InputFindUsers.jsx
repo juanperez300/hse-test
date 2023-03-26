@@ -9,7 +9,7 @@ export default function InputAdornments() {
     <Box sx={{ display: "flex", flexWrap: "wrap" }}>
       <div>
         <TextField
-          label="Search users.."
+          defaultValue="Search users.."
           sx={{ width: "240px" }}
           InputProps={{
             startAdornment: (

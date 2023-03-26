@@ -33,19 +33,22 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Donut', 452, 25.0, 51, 4.9),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-  createData('Honeycomb', 408, 3.2, 87, 6.5),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Jelly Bean', 375, 0.0, 94, 0.0),
-  createData('KitKat', 518, 26.0, 65, 7.0),
-  createData('Lollipop', 392, 0.2, 98, 0.0),
-  createData('Marshmallow', 318, 0, 81, 2.0),
-  createData('Nougat', 360, 19.0, 9, 37.0),
-  createData('Oreo', 437, 18.0, 63, 4.0),
+  createData('Kurt Knispel', 305, 3.7, 67, 4.3),
+  createData('Mathew Smith', 452, 25.0, 51, 4.9),
+  createData('Albert Miller', 262, 16.0, 24, 6.0),
+  createData('Maya Karamchandani', 159, 6.0, 24, 4.0),
+  createData('Jorge Gonzalez', 356, 16.0, 49, 3.9),
+  createData('Ada Wong', 408, 3.2, 87, 6.5),
+  createData('Eddy Fuller', 237, 9.0, 37, 4.3),
+  createData('Steven Johnson', 375, 0.0, 94, 0.0),
+  createData('Katerine Setsuna', 518, 26.0, 65, 7.0),
+  createData('Ada Lovelace', 392, 0.2, 98, 0.0),
+  createData('Alan Turin', 318, 0, 81, 2.0),
+  createData('Steve Jobs', 360, 19.0, 9, 37.0),
+  createData('Simon Hayha', 437, 18.0, 63, 4.0),
+  createData('Corey Taylor', 437, 18.0, 63, 4.0),
+  createData('Oliver Sykes', 437, 18.0, 63, 4.0),
+  createData('Mitch Lucker', 437, 18.0, 63, 4.0)
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -64,10 +67,6 @@ function getComparator(order, orderBy) {
     : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
-// Since 2020 all major browsers ensure sort stability with Array.prototype.sort().
-// stableSort() brings sort stability to non-modern browsers (notably IE11). If you
-// only support modern browsers you can replace stableSort(exampleArray, exampleComparator)
-// with exampleArray.slice().sort(exampleComparator)
 function stableSort(array, comparator) {
   const stabilizedThis = array.map((el, index) => [el, index]);
   stabilizedThis.sort((a, b) => {
@@ -85,31 +84,31 @@ const headCells = [
     id: 'name',
     numeric: false,
     disablePadding: true,
-    label: 'Dessert (100g serving)',
+    label: 'Name ',
   },
   {
     id: 'calories',
     numeric: true,
     disablePadding: false,
-    label: 'Calories',
+    label: 'Company',
   },
   {
     id: 'fat',
     numeric: true,
     disablePadding: false,
-    label: 'Fat (g)',
+    label: 'Role',
   },
   {
     id: 'carbs',
     numeric: true,
     disablePadding: false,
-    label: 'Carbs (g)',
+    label: 'Verified',
   },
   {
     id: 'protein',
     numeric: true,
     disablePadding: false,
-    label: 'Protein (g)',
+    label: 'Status',
   },
 ];
 
