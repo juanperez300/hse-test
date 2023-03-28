@@ -1,7 +1,7 @@
 
 # :computer: HSE Test
 
-![plot](./src/assets/hse.PNG.png)
+![plot](./src/assets/hse.PNG.jpg)
 
 ## :memo: Instrucciones.
 
