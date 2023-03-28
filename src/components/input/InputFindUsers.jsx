@@ -2,12 +2,12 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
-
+import AppContext from "../../context/AppContext";
 import TextField from "@mui/material/TextField";
+
 export default function InputAdornments() {
-  const [lookfor, setLookfor] = React.useState({
-    name: "",
-  });
+  const { lookfor, setLookfor, filter, outcome } = React.useContext(AppContext);
+
   const handleSearch = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -16,6 +16,7 @@ export default function InputAdornments() {
       [name]: value,
     });
   };
+
   return (
     <Box sx={{ display: "flex", flexWrap: "wrap" }}>
       <div>
@@ -35,7 +36,6 @@ export default function InputAdornments() {
           }}
         />
       </div>
-      
     </Box>
   );
 }
