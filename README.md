@@ -1,7 +1,7 @@
 
-# :computer: Bold Test
+# :computer: HSE Test
 
-![plot](./src/assets/bold.png)
+![plot](./src/assets/hse.png)
 
 ## :memo: Instrucciones.
 
@@ -16,11 +16,11 @@ Una vez verificados siga los siguientes pasos.
 
 ### Paso 1
 
-En una consola ejecutar el comando `git clone https://github.com/luismaviit/bold-test.git`, para crear un clon del proyecto.
+En una consola ejecutar el comando `git clone https://github.com/juanperez300/hse-test.git`, para crear un clon del proyecto.
 
 ### Paso 2
 
-Una vez clonado el proyecto, ejecute el comando `cd bold-test` para moverse a la carpeta del proyecto.
+Una vez clonado el proyecto, ejecute el comando `cd hse-test` para moverse a la carpeta del proyecto.
 
 ### Paso 3
 
@@ -48,4 +48,4 @@ Herramientas utilizadas
 
 ### :rocket: Deploy
 
-Para ver el proyecto funcionando, diregirse a https://bold-test.vercel.app/
+Para ver el proyecto funcionando, diregirse a hse-test.vercel.app/
